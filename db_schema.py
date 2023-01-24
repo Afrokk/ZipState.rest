@@ -4,8 +4,8 @@ import psycopg2
 conn = psycopg2.connect(
         host="localhost",
         database="dataset",
-        user=os.environ['postgres'],
-        password=os.environ['postgres'])
+        user=os.environ['DB_USERNAME'],
+        password=os.environ['DB_PASSWORD'])
 
 cursor = conn.cursor()
 
