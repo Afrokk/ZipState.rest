@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} State Data {% endblock %}</h1>
+    {% for state in stateData %}
+        <h3>{{state}}</h3>
+    {% endfor %}
+{% endblock %}
