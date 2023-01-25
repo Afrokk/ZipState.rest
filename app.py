@@ -6,9 +6,13 @@ app = Flask(__name__)
 def connectToDatabase():
     conn = psycopg2.connect(
         host="localhost",
-        database="dataset",
-        user=os.environ["DB_USERNAME"],
-        password=os.environ["DB_PASSWORD"],
+        database="statedata",
+        
+        # Use the following if you are using
+        # password protected authentication
+        # for your database.
+        user="afrokk",
+        password="postgres",
     )
     return conn
 
