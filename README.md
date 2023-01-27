@@ -95,6 +95,8 @@ Use `python3 -V` and `psql -V` to verify that both Python and PostgreSQL are set
     ```
     This will start the application with everything setup as needed.
 
+Note: If you are encountering issues with `app.py` warning about libraries not found, you need to select the Python interpreter for the `vEnv` virtual environment. You can do so by pressing `Ctrl+Shift+P` and selecting `Python: Select Interpreter` in VSCode. Then, sleect `Enter interpreter path` and give it the path to `python3.10` file located in `vEnv/bin/`. Read more about this [here](https://code.visualstudio.com/docs/python/environments#_using-the-create-environment-command).
+
 ## To-Do
 Some of the things I'd like to do with this project, as I work on it:
 
