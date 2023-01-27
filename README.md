@@ -65,7 +65,7 @@ Use `python3 -V` and `psql -V` to verify that both Python and PostgreSQL are set
     ```sh
     \l
     ```
-    The \l command should display a list of databases on your system, and should include the database we created above.
+    The \l command should display a list of databases on your system, and should include the database called `state_data` we created above.
 
     Exit from psql:
     ```sh
@@ -84,7 +84,7 @@ Use `python3 -V` and `psql -V` to verify that both Python and PostgreSQL are set
     export DB_USERNAME=<yourUsername>
     export DB_PASSWORD='<yourPassword>'
     ```
-    The username and password should be the same as the ones you setup in step 3. After this, run
+    The `username` and `password` should be the same as the ones you setup in step 3. After this, run
 
     ```sh
     flask --app app run
