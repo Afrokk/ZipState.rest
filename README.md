@@ -40,8 +40,16 @@ Use `python3 -V` and `psql -V` to verify that both Python and PostgreSQL are set
     ```
 
     This will activate the virtual environment. 
+
+3. Install the required dependencies:
+
+    Once you are in the virtual environment, run
+    ```sh
+    pip3 install -r requirements.txt
+    ```
+    This will install all the required dependencies.
   
-3. Create a blank PostgreSQL database by running the following commands:
+4. Create a blank PostgreSQL database by running the following commands:
     ```sh
     sudo -iu postgres psql
     ```
@@ -72,13 +80,13 @@ Use `python3 -V` and `psql -V` to verify that both Python and PostgreSQL are set
     \q
     ```
 
-4. Import the dataset into your database:
+5. Import the dataset into your database:
     ```sh
     psql -U afrokk state_data < dataset.pgsql
     ```
     After this, your database is all setup!
 
-5. Start the application:
+6. Start the application:
 
     Setup environment variables:
     ```sh
