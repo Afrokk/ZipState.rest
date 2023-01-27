@@ -79,6 +79,7 @@ Use `python3 -V` and `psql -V` to verify that both Python and PostgreSQL are set
     After this, your database is all setup!
 
 5. Start the application:
+
     Setup environment variables:
     ```sh
     export DB_USERNAME=<yourUsername>
