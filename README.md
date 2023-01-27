@@ -65,7 +65,7 @@ Use `python3 -V` and `psql -V` to verify that both Python and PostgreSQL are set
     ```sh
     \l
     ```
-    The \l command should display a list of databases on your system, and should include the database called `state_data` we created above.
+    The `\l` command should display a list of databases on your system, and should include the database called `state_data` we created above.
 
     Exit from psql:
     ```sh
