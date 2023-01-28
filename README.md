@@ -112,7 +112,8 @@ Some of the things I'd like to do with this project, as I work on it:
 - [x] Gather necessary data and clean it up.
 - [x] Setup database.
 - [x] Code the API. (IN PROGESS)
-- [x] Add JSON functionality and setup routes. COMPLETED.
+- [x] Add JSON functionality and setup routes. 
+  - [x] COMPLETED.
 
 ## Contact
 If you have any feedback or need help, please reach out to me:
