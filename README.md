@@ -57,11 +57,11 @@ Gives the following information from a particular US zip code:
       <li>City</li>
       <li>County</li>
       <li>Timezone</li>
-      <li>ITS SOI Code</li>
+      <li>IRS SOI Code</li>
       <li>Area Code</li>
       <li>Country</li>
       <li>Latitude/Longitude</li>
-      <li>ITS Estimated Population</li>
+      <li>IRS Estimated Population</li>
     </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
