@@ -9,21 +9,6 @@
   <p align="center">
     A free API for querying state data from a given US ZIP code.    
     <br />
-    <br />
-    Gives the following information about a particular US zip code:
-    <ul>
-      <li>ZIP Type</li>
-      <li>State Abbreviation</li>
-      <li>City</li>
-      <li>County</li>
-      <li>Timezone</li>
-      <li>ITS SOI Code</li>
-      <li>Area Code</li>
-      <li>Country</li>
-      <li>Latitude/Longitude</li>
-      <li>ITS Estimated Population</li>
-    </ul>
-    <br />
     <a href="#about-the-project"><strong>Check it out »</strong></a>
     <br />
     <br />
@@ -63,7 +48,21 @@
 
 [![Product Name Screen Shot][product-screenshot]]()
 
-An REST API that gives details like State, Country, IRS SOI Code, Longitude/Latitude & more from a given ZIP code. Built using Python, Flask & PostgreSQL.
+An REST API built on the WSGI server platform that gives details like State, Country, IRS SOI Code, Longitude/Latitude & much more from a given ZIP code. 
+
+Gives the following information from a particular US zip code:
+    <ul>
+      <li>ZIP Type</li>
+      <li>State Abbreviation</li>
+      <li>City</li>
+      <li>County</li>
+      <li>Timezone</li>
+      <li>ITS SOI Code</li>
+      <li>Area Code</li>
+      <li>Country</li>
+      <li>Latitude/Longitude</li>
+      <li>ITS Estimated Population</li>
+    </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
