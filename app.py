@@ -18,15 +18,14 @@ def connectToDatabase():
 
 @app.route("/")
 def index():
+    return render_template('index.html')
+
+@app.get("/api")
+def api():
     conn = connectToDatabase()
     cur = conn.cursor()
     cur.execute('SELECT * FROM "State Data";')
     stateData = cur.fetchall()
     cur.close()
     conn.close()
-    return render_template('index.html', stateData=stateData)
-
-@app.route("/api")
-def api():
-    #TO DO
-    pass
+    return render_template('api.html', stateData=stateData)
