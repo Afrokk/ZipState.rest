@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Afrokk/ZipState.rest">
-    <img src="images/clippng" alt="Logo" width="325" height="325">
+    <img src="images/clip.png" alt="Logo" width="325" height="325">
   </a>
   <h3 align="center">ZipState</h3>
   <p align="center">
