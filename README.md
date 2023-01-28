@@ -1,6 +1,6 @@
 ## About The Project
 
-An upcoming REST API that gives details like State, Country, IRS SOI Code, Longitude/Latitude & more from a given ZIP code. Built using Python, Flask & PostgreSQL.
+An REST API that gives details like State, Country, IRS SOI Code, Longitude/Latitude & more from a given ZIP code. Built using Python, Flask & PostgreSQL.
 
 ## Development
 Here's how to set this project up for development purposes.
