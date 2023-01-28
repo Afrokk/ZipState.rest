@@ -1,8 +1,84 @@
+<a name="readme-top"></a>
+
+<br />
+<div align="center">
+  <a href="https://github.com/Afrokk/ZipState.rest">
+    <img src="images/clippng" alt="Logo" width="325" height="325">
+  </a>
+  <h3 align="center">ZipState</h3>
+  <p align="center">
+    A free API for querying state data from a given US ZIP code.    
+    <br />
+    <br />
+    Gives the following information about a particular US zip code:
+    <ul>
+      <li>ZIP Type</li>
+      <li>State Abbreviation</li>
+      <li>City</li>
+      <li>County</li>
+      <li>Timezone</li>
+      <li>ITS SOI Code</li>
+      <li>Area Code</li>
+      <li>Country</li>
+      <li>Latitude/Longitude</li>
+      <li>ITS Estimated Population</li>
+    </ul>
+    <br />
+    <a href="#about-the-project"><strong>Check it out »</strong></a>
+    <br />
+    <br />
+    <a href="#usage">View Demo</a>
+    ·
+    <a href="https://github.com/Afrokk/ZipState.rest/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Afrokk/ZipState.rest/issues">Request Feature</a>
+  </p>
+</div>
+
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+
 ## About The Project
+
+[![Product Name Screen Shot][product-screenshot]]()
 
 An REST API that gives details like State, Country, IRS SOI Code, Longitude/Latitude & more from a given ZIP code. Built using Python, Flask & PostgreSQL.
 
-## Development
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Built With
+
+* [![Python][Python.com]][Python-url]
+* [![Flask][Flask.com]][Flask-url]
+* [![PostgreSQL][PostgreSQL.com]][PostgreSQL-url]
+* [![Jinja][Jinja.com]][Jinja-url]
+* [![HTML][HTML.com]][HTML-url]
+* [![CSS][CSS.com]][CSS-url]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Getting Started
 Here's how to set this project up for development purposes.
 
 ### Prerequisites
@@ -104,9 +180,30 @@ Use `python3 -V` and `psql -V` to verify that both Python and PostgreSQL are set
     ```
     This will start the application with everything setup as needed.
 
-Note: If you are encountering issues with `app.py` warning about libraries not found, you need to select the Python interpreter for the `vEnv` virtual environment. You can do so by pressing `Ctrl+Shift+P` and selecting `Python: Select Interpreter` in VSCode. Then, select `Enter interpreter path` and give it the path to `python3.10` file located in `vEnv/bin/`. Read more about this [here](https://code.visualstudio.com/docs/python/environments#_using-the-create-environment-command).
+_Note: If you are encountering issues with `app.py` warning about libraries not found, you need to select the Python interpreter for the `vEnv` virtual environment. You can do so by pressing `Ctrl+Shift+P` and selecting `Python: Select Interpreter` in VSCode. Then, select `Enter interpreter path` and give it the path to `python3.10` file located in `vEnv/bin/`. Read more about this [here](https://code.visualstudio.com/docs/python/environments#_using-the-create-environment-command)._
 
-## To-Do
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Usage
+The ZipState API has two endpoints, one at `/api` and one at `/api/<ZIPCode>`.
+
+### `/api`:
+This endpoint returns the state details of a random ZIP code, in JSON.
+
+<p align="center">
+    <img src="images/endpoint-1.jpg">
+</p>
+
+### `/api/<ZIPCode>`:
+This endpoint returns the state details of the provided US ZIP code, also in JSON.
+
+<p align="center">
+    <img src="images/endpoint-2.jpg">
+</p>
+
+Both endpoints use the HTTP `GET` method to retrieve the state details from the database.
+
+## Roadmap
 Some of the things I'd like to do with this project, as I work on it:
 
 - [x] Gather necessary data and clean it up.
@@ -115,7 +212,34 @@ Some of the things I'd like to do with this project, as I work on it:
 - [x] Add JSON functionality and setup routes. 
   - [x] COMPLETED.
 
+## Contributing
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. Don't forget to give the project a star! Thanks again!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+## License
+Distributed under the MIT License. See `LICENSE` for more information.
+
 ## Contact
 If you have any feedback or need help, please reach out to me:
 
-Afrasiyab (Afrokk) Khan - [@afrokk_](https://www.instagram.com/afrokk_/) - [afrokk.design](https://afrokk.design/) - [afrokk.dev](https://afrokk.dev/) - [LinkedIn](https://www.linkedin.com/in/afrasiyab-k/) - afrasiyabkhan379@gmail.com
+Afrasiyab (Afrokk) Khan - [@afrokk_](https://www.instagram.com/afrokk_/) - [afrokk.dev](https://afrokk.dev/) - [LinkedIn](https://www.linkedin.com/in/afrasiyab-k/) - hi@afrokk.dev
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+[product-screenshot]: images/api.jpg
+[Python.com]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
+[Python-url]: https://www.python.org/
+[Flask.com]: https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white
+[Flask-url]: https://flask.palletsprojects.com/en/2.2.x/
+[PostgreSQL.com]: https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white
+[PostgreSQL-url]: https://www.postgresql.org/
+[Jinja.com]: https://img.shields.io/badge/jinja-white.svg?style=for-the-badge&logo=jinja&logoColor=black
+[Jinja-url]: https://jinja.palletsprojects.com/en/3.1.x/
+[HTML.com]: https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white
+[HTML-url]: https://en.wikipedia.org/wiki/HTML
+[CSS.com]: https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white
+[CSS-url]: https://en.wikipedia.org/wiki/CSS
