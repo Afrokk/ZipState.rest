@@ -96,11 +96,11 @@ Use `python3 -V` and `psql -V` to verify that both Python and PostgreSQL are set
     The `username` and `password` should be the same as ones you setup in step 4. After this, run
 
     ```sh
-    flask --app app run
+    flask --app api run
     ```
     If the above command gives a `flask: command not found` error, run this instead:
     ```sh
-    python3 -m flask --app app run
+    python3 -m flask --app api run
     ```
     This will start the application with everything setup as needed.
 
@@ -111,8 +111,8 @@ Some of the things I'd like to do with this project, as I work on it:
 
 - [x] Gather necessary data and clean it up.
 - [x] Setup database.
-- [ ] Code the API. (IN PROGESS)
-- [ ] Add JSON/text functionality and setup routes.
+- [x] Code the API. (IN PROGESS)
+- [x] Add JSON functionality and setup routes. COMPLETED.
 
 ## Contact
 If you have any feedback or need help, please reach out to me:
