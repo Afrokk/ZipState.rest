@@ -1,7 +1,55 @@
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
+abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 html {
     font-family: 'Roboto', sans-serif;
     color: #ccc5b9;
-    background-color: #252422;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    max-width: 95%;
 }
 
 .container {
@@ -18,13 +66,34 @@ h1 {
     font-size: 2.5em;
     font-weight: 600;
     margin: 0;
+    padding-bottom: 2rem;
 }
 
 h1 span {
     font-weight: 100;
 }
 
+h3 {
+    font-weight: bold;
+    padding-top: 2rem;
+    padding-bottom: 0.75rem;
+}
+
+ul {
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+}
+
+li {
+    padding-bottom: 0.5rem;
+}
+
+span:first-child {
+    font-weight: 900;
+}
+
 a {
+    cursor: pointer;
     color: #eb5e28;
     text-decoration: underline;
 }
@@ -34,18 +103,25 @@ a:hover {
     text-decoration: underline;
 }
 
-img {
-    width: 100%;
-    max-width: 450px;
-    rotate: -15deg;
-    margin: 0 auto;
-    position: absolute;
-    top: 28rem;
-    right: 18rem;
-    opacity: 0.7;
+.copyright-msg {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 footer {
     text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
 
+/* @media (max-width: 1150px) {
+    img {
+        max-width: 200px
+    }
+}
+
+@media (max-width: 768px) {
+    img {
+        display: none;
+    }
+} */

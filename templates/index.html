@@ -1,28 +1,29 @@
-{% extends 'base.html' %}
-
-{% block title %} State Data API {% endblock %}
-{% block content %}
-    <h1>ZipState: <span>A State Data API</span></h1>
-    <p>A free API for querying state data from a given US ZIP code.</p>
-    <h3>Available Data:</h3>
-    <ul>
-        <li>ZIP Type</li>
-        <li>State Abbreviation</li>
-        <li>City</li>
-        <li>County</li>
-        <li>Timezone</li>
-        <li>ITS SOI Code</li>
-        <li>Area Code</li>
-        <li>Country</li>
-        <li>Latitude/Longitude</li>
-        <li>ITS Estimated Population</li>
-    </ul>
-    <p>Returns either a <strong>JSON object</strong> or <strong>plain text</strong>.</p>
-    <h3>API Endpoints:</h3>
-    <ul>
-        <li><a href="/api/">/api/</a> <span>Returns details of a random state.</span></li>
-        <li><a href="/api/<ZIP Code>">/api/yourZIPCode</a> <span>Returns details about the give ZIP code in JSON.</span></li>
-        <li><a href="/api/<ZIP Code>/text">/api/yourZIPCode</a> <span>Returns details about the give ZIP code in text (string).</span></li>
-    </ul>
-    <img src="../static/assets/us.svg" alt="US Map">
+{% extends 'base.html' %} {% block title %} State Data API {% endblock %} {%
+block content %}
+<h1>ZipState: <span>A State Data API</span></h1>
+<p>A free API for querying state data from a given US ZIP code.</p>
+<h3>Available Data:</h3>
+<ul>
+  <li>ZIP Type</li>
+  <li>State Abbreviation</li>
+  <li>City</li>
+  <li>County</li>
+  <li>Timezone</li>
+  <li>ITS SOI Code</li>
+  <li>Area Code</li>
+  <li>Country</li>
+  <li>Latitude/Longitude</li>
+  <li>ITS Estimated Population</li>
+</ul>
+<p>Returns a <span>JSON object</span>.</p>
+<h3>API Endpoints:</h3>
+<ul>
+  <li>
+    <a href="/api">/api</a> <span>Returns details of a random state.</span>
+  </li>
+  <li>
+    <a href="/api/74119">/api/yourZIPCode</a>
+    <span>Returns the state details about a given ZIP code in JSON.</span>
+  </li>
+</ul>
 {% endblock %}
