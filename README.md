@@ -48,7 +48,7 @@
 
 [![Product Name Screen Shot][product-screenshot]]()
 
-An REST API built on the WSGI server platform that gives details like State, Country, IRS SOI Code, Longitude/Latitude & much more from a given ZIP code. 
+A REST API built on the WSGI server platform that gives details like State, Country, IRS SOI Code, Longitude/Latitude & much more from a given ZIP code. 
 
 Gives the following information from a particular US zip code:
     <ul>
